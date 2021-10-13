@@ -3,12 +3,12 @@
     <div class="container">
       <h1 class="title">Paw Waves</h1>
       <section v-for="post in posts" :key="post.fields.slug">
-        <div
+        <!-- <div
           class="image"
           :style="
             `background: url(https:${post.fields.heroImage.fields.file.url}) center center no-repeat`
           "
-        ></div>
+        ></div> -->
         <h2 class="title">
           <nuxt-link :to="post.fields.slug">{{ post.fields.title }}</nuxt-link>
         </h2>
